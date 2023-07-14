@@ -1,3 +1,159 @@
+## 15-3.2.2 2023-06-19 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Fix Zabbix Agent2 compilation resulting in breaking rest of build
+      - Strip debug symbols from Zabbix Agent 2
+
+
+## 15-3.2.1 2023-06-16 <dave at tiredofit dot ca>
+
+   ### Reverted
+      - Stop including llvm dependencies
+
+
+## 15-3.2.0 2023-05-10 <dave at tiredofit dot ca>
+
+   ### Added
+      - PostgreSQL 15.3
+      - Alpine 3.18 base
+
+
+## 15-3.1.1 2023-05-09 <dave at tiredofit dot ca>
+
+   ### Added
+      - Update Zabbix Postgresql Plugin to 6.4.2
+
+
+## 15-3.1.0 2023-04-26 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add support for _FILE environment variables
+
+
+## 15-3.0.2 2023-02-08 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 15.2
+      - Zabbix Postgresql plugin 6.2.7
+
+
+## 3.0.1 2023-01-04 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Build and insert Zabbix Agent 2 Postgresql plugin in this image
+      - Cleanup build directories for smaller image size
+
+
+## 3.0.0 2022-12-31 <dave at tiredofit dot ca>
+
+This image rewrite contains many breaking changes, yet tries to keep compatibility with older installations specifically with paths. It would be recommended to take a backup of your existing database and restore to a fresh installation to take advantage of the new features.
+
+   ### Added
+      - Rewrote entire image
+      - Independent Superuser User and Password for controlling all aspects of server
+      - Multiple Database and User support
+      - Extensions Support per database
+      - Replication Support (Main, Secondary (Read Only), Snapshot)
+      - Customizable paths for logs, config, data, seperate path for transaction logs
+      - Log formatting, Log type options
+      - Customizable Locales
+      - Monitoring Support using Zabbix 2 Agent
+      - Customizable Listening Ports
+
+   ### Reverted
+      - Deprecation of POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB environment variables. See README for information
+
+
+## 2.5.12 2022-11-23 <dave at tiredofit dot ca>
+
+   ### Added
+      - Alpine 3.17 base
+
+
+## 2.5.11 2022-11-18 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 15.1
+
+
+## 2.5.10 2022-10-13 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 15.0
+
+
+## 2.5.9 2022-09-14 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 14.5
+
+
+## 2.5.8 2022-06-09 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 14.4
+
+
+## 2.5.7 2022-05-24 <dave at tiredofit dot ca>
+
+   ### Added
+      - Alpine 3.16 base
+
+
+## 2.5.6 2022-05-15 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 14.3
+
+
+## 2.5.5 2022-03-14 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 14.2
+
+
+## 2.5.4 2022-02-09 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Rework to support new base image
+
+
+## 2.5.3 2022-02-09 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Update base image
+
+
+## 2.5.2 2021-12-07 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add Zabbix Auto Agent registration support for templates
+
+
+## 2.5.1 2021-12-01 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 14.1
+
+
+## 2.5.0 2021-10-13 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgresql 14.0
+
+
+## 2.4.5 2021-09-17 <dave at tiredofit dot ca>
+
+   ### Added
+      - Pin Zabbix Agent Classic
+
+
+## 2.4.4 2021-08-18 <dave at tiredofit dot ca>
+
+   ### Added
+      - Postgres 13.4
+
+
 ## 2.4.3 2021-07-26 <dave at tiredofit dot ca>
 
    ### Added
